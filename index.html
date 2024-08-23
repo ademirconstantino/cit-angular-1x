@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Constantino IT Consulting</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <script src="https://code.angularjs.org/1.3.15/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+  </script>
+</head>
+
+<body ng-app="ConstantinoITApp">
+  <div class="main" ng-controller="MainController">
+    <div class="topnav" id="myTopnav">
+	  <a href="#home" class="active">Home</a>
+	  <a href="#news">About us</a>
+	  <a href="#contact">Services</a>
+	  <a href="#about">Contact us</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+  </div>
+  
+  <div ng-view></div>
+  
+  <div class="rating">
+    <div class="container">
+      <h1>Software Development Expertise</h1>
+      <p>Experts Consultants in Information Technology Software</p>
+    </div>
+  </div>
+
+  <div class="container gallery">
+    <img src="resources/img/network.png" />
+    <img src="resources/img/microchip.png" />
+    <img src="resources/img/computers.png" />
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="container location">
+    <img src="resources/img/map.png" />
+    <h1>Rome, Italy</h1>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; Constantino IT - 2010 - 2024 - All rights reserved.
+      </div>
+
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  
+  
+	<!-- Modules -->
+    <script src="resources/js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="resources/js/controllers/MainController.js"></script>
+
+    <!-- Services -->
+    <script src="resources/js/services/MainService.js"></script>
+
+</body>
+
+</html>
