@@ -6,8 +6,8 @@ app.config(function ($routeProvider) {
       controller: 'MainController', 
       templateUrl: 'resources/views/main.html' 
     }).when('/about', { 
-      controller: 'AboutController', 
-      templateUrl: 'resources/views/main.html' 
+      controller: 'MainController', 
+      templateUrl: 'resources/views/about.html' 
     }).otherwise({ 
       redirectTo: '/' 
     }); 
