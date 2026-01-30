@@ -19,6 +19,15 @@ body {
   padding-top: 1rem;
 }
 
+@media (min-width: 1200px) {
+  .main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    padding-top: 1rem;
+  }
+}
+
 .main img {
   width: 15rem;
   display: block;
